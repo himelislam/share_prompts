@@ -1,9 +1,9 @@
 import Image from 'next/image'
 
-export default function About() {
+export default function Testimonial() {
   return (
     <div>
-      Hi from About
+      Hi from Testimonial
     </div>
   )
 }
