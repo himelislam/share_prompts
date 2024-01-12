@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 const blogs = [
   {
@@ -30,10 +31,14 @@ export default function Blog() {
 
       <ul>
           {
-            blogs.map(blog => <li>{blog.title}</li>)
+            blogs.map(blog => <li>
+              <Link href={`/blog/${blog.id}`}>
+              {blog.title}
+              </Link>
+              </li>)
           }
       </ul>
-      
+
     </div>
   
   )
